@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target     = '6.0'
   s.osx.deployment_target     = '10.10'
   s.default_subspec           = 'Core'
+  s.static_framework          = true
 
   s.subspec 'Core' do |ss|
     ss.ios.source_files          = 'GBDeviceInfo/*_iOS.{h,m}', 'GBDeviceInfo/*_Common.{h,m}', 'GBDeviceInfo/GBDeviceInfo.h', 'GBDeviceInfo/GBDeviceInfoInterface.h', 'GBDeviceInfo/GBDeviceInfo_Subclass.h'
